@@ -1,0 +1,98 @@
+/* Google Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+
+/*Générale */
+
+*{
+    margin: 0;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+}
+
+header h1{
+    font-family: "Shrikhand";
+    padding-left: 60px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #252525;
+}
+
+footer h2{
+    font-family: "Shrikhand";
+    color: white;
+    padding: 15px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer ul > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Main */
+
+#section1{
+    background-color: #FFAE00;
+}
+
+#section1 div{
+    width: 320px;
+    height: 254px;
+    align-items: end;
+}
+
+#section1 div > h2{
+    padding: 9.92px;
+    height: 29px;
+    width: 304px;
+}
+
+#section1 div > p{
+    padding-left: 10px;
+    text-align: center;
+}
+
+#section1 div > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#section1 div > form > input{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid orange;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 20);
+    width: 300px;
+    height: 34px;
+}
+
+#section1 div > form > button{
+    height: 35px;
+    background: linear-gradient(to top, #FFAE00, #FF7800);
+    border: 2px solid orange;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px;
+    width: 126px;
+    margin: auto;
+}
