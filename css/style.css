@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*Générale */
 
 :root{
@@ -24,6 +26,10 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    i{
+        display: block;
+    }
 }
 
 header h1{
@@ -66,24 +72,24 @@ footer ul > a{
 }
 
 #section1 div{
-    width: 320px;
-    height: 254px;
-    align-items: end;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
 }
 
 #section1 div > h2{
-    padding: 5px;
     height: 29px;
-    width: 304px;
+    width: 100%;
     padding-top: 20px;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 #section1 div > p{
-    padding-left: 10px;
     text-align: left;
     width: 100%;
-    margin: auto;
     padding-bottom: 10px;
 }
 
@@ -100,7 +106,6 @@ footer ul > a{
     border-radius: 20px;
     border: 2px solid orange;
     box-shadow: 1px 1px 1px 1px orange;
-    width: 300px;
     height: 34px;
 }
 
@@ -115,7 +120,7 @@ footer ul > a{
 }
 
 #section2{
-    width: 320px;
+    /* width: 320px; */
     height: 271px;
 }
 
@@ -130,9 +135,11 @@ footer ul > a{
     display: flex;
     gap: 10px;
     flex-direction: column;
-    padding-left: 20px;
-    padding-top: 20px;
-    max-width: 100%;
+    padding: 0;
+    margin-left: 20px;
+    /* padding-left: 20px; */
+    /* padding-top: 20px; */
+    /* max-width: 100%; */
 }
 
 .fonctionning li:nth-child(1)::before{
@@ -161,12 +168,12 @@ li::before{
 #section2 div > ul > li{
     background-color: white;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
-    width: 250px;
     border-radius: 8px;
-    margin: auto;
     text-align: left;
-    padding: 20px;
     position: relative;
+    padding: 20px;
+    /* width: 250px; */
+    /* margin: auto; */
 }
 
 /* Section3 */
@@ -191,4 +198,67 @@ li::before{
 
 .recommandation input:checked ~ .unchecked{
     display: none;
+}
+
+#section3{
+    font-family: "Roboto";
+    background-color: var(--orangejaune);
+}
+
+#section3 h2{
+    padding: 10px;
+}
+
+#section3 div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#section3 div > article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#section3 div > article > img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#section3 > div > article > a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#section3 div > article > div{
+    border-top: 1px solid var(--orange);
+}
+
+#section3 div > article > div > label{
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
+}
+
+#section3 div > a{
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+#section3 div > a > button{
+    height: 35px;
+    background: linear-gradient(to top, #FFAE00, #FF7800);
+    border: 2px solid orange;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px orange;
+    width: fit-content;
+    margin: auto;
+    border: 0;
+    padding: 8px 20px;
+    display: block;
 }
