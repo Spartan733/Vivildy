@@ -4,6 +4,14 @@
 
 /*Générale */
 
+:root{
+    --shadow:#252525;
+    --orange: #ff7800;
+    --orangejaune: #ffae00;
+    --black: #000;
+    --white: #fff;
+}
+
 *{
     margin: 0;
     
@@ -131,49 +139,24 @@ footer ul > a{
     content: '1';
 }
 
-li:nth-child(1)::before{
-    background-color: orange;
-    width: 23px;
-    height: 20px;
-    /* padding-top: 20px; */
-    padding: 10px;
-    padding-left: -10px;
-    border-radius: 12.02px;
-    color: white;
-    align-items: center; 
+li::before{
+    position: absolute;
+    left: -12px;
+    background-color:var(--orange) ;
+    border-radius: 50%;
+    padding: 3px 7px;
+    top: 28%;
+    color: var(--white);
 }
 
 .fonctionning li:nth-child(2)::before{
     content: '2';
 }
 
-li:nth-child(2)::before{
-    background-color: orange;
-    width: 23px;
-    height: 20px;
-    /* padding-top: 20px; */
-    padding: 10px;
-    padding-left: -10px;
-    border-radius: 12.02px;
-    color: white;
-    align-items: center; 
-}
-
 .fonctionning li:nth-child(3)::before{
     content: '3';
 }
 
-li:nth-child(3)::before{
-    background-color: orange;
-    width: 23px;
-    height: 20px;
-    /* padding-top: 20px; */
-    padding: 10px;
-    padding-left: -10px;
-    border-radius: 12.02px;
-    color: white;
-    align-items: center; 
-}
 
 #section2 div > ul > li{
     background-color: white;
@@ -183,4 +166,29 @@ li:nth-child(3)::before{
     margin: auto;
     text-align: left;
     padding: 20px;
+    position: relative;
+}
+
+/* Section3 */
+
+.recommandation{
+    cursor: pointer;
+    caret-color: blueviolet;
+    display: block;
+}
+
+.recommandation input{
+    display: none;
+}
+
+.checked{
+    display: none;
+}
+
+.recommandation input:checked ~ .checked{
+    display: inline;
+}
+
+.recommandation input:checked ~ .unchecked{
+    display: none;
 }
