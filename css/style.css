@@ -6,6 +6,7 @@
 
 *{
     margin: 0;
+    
 }
 
 /* Header */
@@ -14,12 +15,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 320px;
+    width: 100%;
 }
 
 header h1{
     font-family: "Shrikhand";
     padding-left: 60px;
+    width: 100%;
 }
 
 
@@ -62,27 +64,34 @@ footer ul > a{
 }
 
 #section1 div > h2{
-    padding: 9.92px;
+    padding: 5px;
     height: 29px;
     width: 304px;
+    padding-top: 20px;
+    margin: auto;
 }
 
 #section1 div > p{
     padding-left: 10px;
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 #section1 div > form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    margin: auto;
 }
 
 #section1 div > form > input{
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid orange;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 20);
+    box-shadow: 1px 1px 1px 1px orange;
     width: 300px;
     height: 34px;
 }
@@ -92,7 +101,86 @@ footer ul > a{
     background: linear-gradient(to top, #FFAE00, #FF7800);
     border: 2px solid orange;
     border-radius: 30px;
-    box-shadow: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px 2px orange;
     width: 126px;
     margin: auto;
+}
+
+#section2{
+    width: 320px;
+    height: 271px;
+}
+
+#section2 h2{
+    padding-top: 20px;
+    padding-left: 15px;
+    height: 29px;
+}
+
+#section2 div > ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.fonctionning li:nth-child(1)::before{
+    content: '1';
+}
+
+li:nth-child(1)::before{
+    background-color: orange;
+    width: 23px;
+    height: 20px;
+    /* padding-top: 20px; */
+    padding: 10px;
+    padding-left: -10px;
+    border-radius: 12.02px;
+    color: white;
+    align-items: center; 
+}
+
+.fonctionning li:nth-child(2)::before{
+    content: '2';
+}
+
+li:nth-child(2)::before{
+    background-color: orange;
+    width: 23px;
+    height: 20px;
+    /* padding-top: 20px; */
+    padding: 10px;
+    padding-left: -10px;
+    border-radius: 12.02px;
+    color: white;
+    align-items: center; 
+}
+
+.fonctionning li:nth-child(3)::before{
+    content: '3';
+}
+
+li:nth-child(3)::before{
+    background-color: orange;
+    width: 23px;
+    height: 20px;
+    /* padding-top: 20px; */
+    padding: 10px;
+    padding-left: -10px;
+    border-radius: 12.02px;
+    color: white;
+    align-items: center; 
+}
+
+#section2 div > ul > li{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    border-radius: 8px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
 }
