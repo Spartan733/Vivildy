@@ -61,7 +61,7 @@ footer ul{
     gap: 10px;
 }
 
-footer ul > a{
+footer ul > li > a{
     text-decoration: none;
     color: white;
     
@@ -197,6 +197,11 @@ li::before{
 
 .checked{
     display: none;
+    width: 16px;
+}
+
+.unchecked{
+    width: 16px;
 }
 
 .recommandation input:checked ~ .checked{
@@ -264,14 +269,17 @@ li::before{
     /* padding-top: 10px;
     padding-left: 7px; */
 }
+/* #section3 div > article > div > label > img{
+    width: 16px;
+} */
 
 #section3 div > a{
     text-decoration: none;
     margin-bottom: 30px;
 }
 
-#section3 div > a > button{
-    height: 35px;
+#section3 div > a {
+    /* height: 35px; */
     background: linear-gradient(to top, #FFAE00, #FF7800);
     border: 2px solid orange;
     border-radius: 30px;

@@ -1,0 +1,134 @@
+/* Google Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*Générale */
+
+:root{
+    --shadow:#252525;
+    --orange: #ff7800;
+    --orangejaune: #ffae00;
+    --black: #000;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    i{
+        display: block;
+    }
+}
+
+header h1{
+    font-family: "Shrikhand";
+    padding-left: 60px;
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    background-color: #252525;
+}
+
+footer h2{
+    font-family: "Shrikhand";
+    color: white;
+    padding: 15px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer ul > li > a{
+    text-decoration: none;
+    color: white;
+    
+    &:hover{
+    transition: all 0.2s ease in ease-in-out;
+    color: var(--orange);
+    }
+}
+
+/* Main */
+
+#section1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 15px;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        border-radius: 20px;
+        margin: auto;
+        /* padding-bottom: 10px; */
+        position: relative;
+    }
+
+        img{
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            position: relative;
+        }
+
+            a{
+                text-decoration: none;
+                color: black;
+                padding-bottom: 20px;
+            }
+}
+
+
+
+/* Pouce en l'air*/
+
+.recommandation{
+    cursor: pointer;
+    caret-color: blueviolet;
+    display: block;
+}
+
+.recommandation input{
+    display: none;
+}
+
+.checked{
+    display: none;
+    width: 16px;
+}
+
+.unchecked{
+    width: 16px;
+}
+
+.recommandation input:checked ~ .checked{
+    display: inline;
+}
+
+.recommandation input:checked ~ .unchecked{
+    display: none;
+}
