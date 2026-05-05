@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 /*Générale */
 
 :root{
@@ -62,6 +64,11 @@ footer ul{
 footer ul > a{
     text-decoration: none;
     color: white;
+    
+    &:hover{
+    transition: all 0.2s ease in ease-in-out;
+    color: var(--orange);
+    }
 }
 
 
@@ -213,6 +220,7 @@ li::before{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 25px 15px;
 }
 
 #section3 div > article{
@@ -222,17 +230,28 @@ li::before{
     background-color: white;
     border-radius: 20px;
     margin: auto;
+    /* padding-bottom: 10px; */
+    position: relative;
 }
 
 #section3 div > article > img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 
 #section3 > div > article > a{
     text-decoration: none;
     color: black;
     padding-bottom: 20px;
+}
+
+#section3 h3{
+    padding-left: 5px;
+}
+
+#section3 > div > article > a > p{
+    padding-left: 5px;
 }
 
 #section3 div > article > div{
@@ -242,7 +261,8 @@ li::before{
 #section3 div > article > div > label{
     display: flex;
     gap: 50px;
-    padding-top: 10px;
+    /* padding-top: 10px;
+    padding-left: 7px; */
 }
 
 #section3 div > a{
@@ -261,4 +281,16 @@ li::before{
     border: 0;
     padding: 8px 20px;
     display: block;
+}
+
+.new::after{
+    content: 'New !';
+    font-family: shrikhand;
+    color: var(--white);
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    background-color: var(--orange);
+    padding: 5px;
+    transform: rotate(-43deg);
 }
