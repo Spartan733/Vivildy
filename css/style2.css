@@ -18,7 +18,7 @@
 
 *{
     margin: 0;
-    
+    font-family: Roboto;
 }
 
 /* Header */
@@ -72,44 +72,111 @@ footer ul > li > a{
 
 /* Main */
 
-#section1 div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px 15px;
+#section1{
+    /* padding: 10px; */
+    font-family: "Roboto";
 
-    article{
+    div{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        background-color: white;
-        border-radius: 20px;
-        margin: auto;
-        /* padding-bottom: 10px; */
-        position: relative;
-    }
-
-        img{
+        gap: 20px;
+        /* padding: 25px 15px; */
+    
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            border-radius: 20px;
+            margin: auto;
             width: 100%;
-            border-radius: 20px 20px 0px 0px;
-            position: relative;
+
+            h2{
+                padding-left: 10px;
+                font-size: 20px;
+            }
+            
+            div{
+                border-top: 1px solid var(--orange);
+
+                label{
+                    display: flex;
+                    gap: 50px;
+                    height: 18px;
+                    margin: 10px;
+                        
+                    img{
+                        width: 100%;
+                        /* border-radius: 20px 20px 0px 0px; */
+                                
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            padding-bottom: 20px;
+                        }
+                    }     
+                }       
+            }           
+        }
+        
+        #article2{
+            border-top: 1px solid var(--orange);
+            border-radius: 0;
+            border-bottom: 1px solid var(--orange);
+            padding-bottom: 30px;
+
+                h2{
+                    padding-top: 30px;
+                }
+
+                p{
+                    padding-left: 10px;
+                }
         }
 
-            a{
-                text-decoration: none;
-                color: black;
+        #article3{
+            /* border-top: 1px solid var(--orange); */
+            border-bottom: 1px solid var(--orange);
+            border-radius: 0;
+            padding-bottom: 40px;
+
+            h2{
+                padding-top: 15px; 
                 padding-bottom: 20px;
             }
-}
 
+            iframe{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
 
+        #article4{
+
+            ul{
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                text-align: start;
+                padding-left: 20px;
+                justify-content: space-between;
+
+                i{
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+} 
 
 /* Pouce en l'air*/
 
 .recommandation{
     cursor: pointer;
     caret-color: blueviolet;
-    display: block;
+    /* display: block; */
 }
 
 .recommandation input{
@@ -118,11 +185,11 @@ footer ul > li > a{
 
 .checked{
     display: none;
-    width: 16px;
+    width: 16px !important;
 }
 
 .unchecked{
-    width: 16px;
+    width: 16px !important;
 }
 
 .recommandation input:checked ~ .checked{
