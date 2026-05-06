@@ -161,10 +161,45 @@ footer ul > li > a{
                 flex-direction: column;
                 text-align: start;
                 padding-left: 20px;
-                justify-content: space-between;
+                padding-bottom: 15px;
 
                 i{
                     color: var(--orange);
+                }
+            }
+
+            h3{
+                padding-bottom: 15px;
+                padding-left: 10px;
+            }
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                gap: 80px;
+                padding-bottom: 20px;
+
+                i{
+                    color: #000099;
+                }
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input{
+                    border: 1px solid var(--orange);
+                    padding: 5px;
+                    outline: none;
+                }
+
+                textarea{
+                    border: 1px solid var(--orange);
+                    /* padding: 5px; */
+                    outline: none;
                 }
             }
         }
