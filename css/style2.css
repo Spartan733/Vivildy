@@ -1,10 +1,6 @@
 /* Google Font*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shrikhand&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
 
 /*Générale */
 
@@ -32,12 +28,17 @@ header{
     i{
         display: block;
     }
+
+    a{
+        text-decoration: none;
+        color: var(--black);
+    }
 }
 
 header h1{
     font-family: "Shrikhand";
-    padding-left: 60px;
     width: 100%;
+    
 }
 
 /* Footer */
@@ -75,6 +76,7 @@ footer ul > li > a{
 #section1{
     /* padding: 10px; */
     font-family: "Roboto";
+    padding-bottom: 20px;
 
     div{
         display: flex;
@@ -96,7 +98,7 @@ footer ul > li > a{
                 font-size: 20px;
             }
             
-            div{
+            form{
                 border-top: 1px solid var(--orange);
 
                 label{
@@ -196,6 +198,15 @@ footer ul > li > a{
                     outline: none;
                 }
 
+                input[type="submit"]{
+                    height: 35px;
+                    background: linear-gradient(to top, #FFAE00, #FF7800);
+                    border: 2px solid orange;
+                    border-radius: 30px;
+                    width: 126px;
+                    margin: auto;
+                }
+
                 textarea{
                     border: 1px solid var(--orange);
                     /* padding: 5px; */
@@ -233,4 +244,26 @@ footer ul > li > a{
 
 .recommandation input:checked ~ .unchecked{
     display: none;
+}
+
+/* Loader */
+
+.loader{
+    border: 16px solid grey;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
