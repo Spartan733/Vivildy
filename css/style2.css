@@ -17,6 +17,14 @@
     font-family: Roboto;
 }
 
+.bg{
+    background-color: var(--orange);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /* Header */
 
 header{
@@ -38,7 +46,7 @@ header{
 header h1{
     font-family: "Shrikhand";
     width: 100%;
-    
+    /* position: relative; */
 }
 
 /* Footer */
@@ -248,14 +256,22 @@ footer ul > li > a{
 
 /* Loader */
 
-.loader{
-    border: 16px solid grey;
+.loader-container{
+    position: absolute;
+    /* background: var(--orange); */
+    border: 16px solid var(--white);
     border-radius: 50%;
-    border-top: 16px solid blue;
-    width: 120px;
-    height: 120px;
+    border-top: 16px solid var(--shadow);
+    /* z-index: 999999; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    transition: opacity 1s ease-in-out;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    /* animation: fadeOutLoader; */
 }
 
 @-webkit-keyframes spin {
