@@ -360,7 +360,15 @@ li::before{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        position: relative;
+
+        h1{
+            position: relative;
+        }
+
+        i.fa-solid.fa-bars{
+            position: absolute;
+            right: 0;
+        }
     }
 
     #section1{
@@ -433,8 +441,54 @@ li::before{
                     color: var(--black);
                 }
             }
+        }   
+    }
+
+    #section2{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #section3{
+
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            max-width: 960px;
+
+            article{
+                flex: 1 0 47%;
+
+                div{
+
+                    img{
+                        position: absolute;
+                        right: 0;
+                        padding-right: 20px;
+                    }
+                }
+            }
         }
-        
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* margin: auto;
+        text-align: center; */
+        justify-content: center;
+
+        h2{
+            margin-left: auto;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            /* margin: auto;
+            padding-right: 73px; */
+        }
     }
 
 }
