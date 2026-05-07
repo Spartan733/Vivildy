@@ -17,14 +17,6 @@
     font-family: Roboto;
 }
 
-.bg{
-    background-color: var(--orange);
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 /* Header */
 
 header{
@@ -114,6 +106,7 @@ footer ul > li > a{
                     gap: 50px;
                     height: 18px;
                     margin: 10px;
+                    padding-bottom: 20px;
                         
                     img{
                         width: 100%;
@@ -173,8 +166,19 @@ footer ul > li > a{
                 padding-left: 20px;
                 padding-bottom: 15px;
 
+                li{
+                    color: var(--black);
+                    gap: 2px;
+
+                    &:hover{
+                    transition: all 0.2s ease in ease-in-out;
+                    color: var(--orange);
+                    }
+                }
+
                 i{
                     color: var(--orange);
+                    padding-right: 5px;
                 }
             }
 
@@ -192,6 +196,11 @@ footer ul > li > a{
 
                 i{
                     color: #000099;
+
+                    &:hover{
+                    transition: all 0.2s ease in ease-in-out;
+                    color: var(--orange);
+                    }
                 }
             }
 
@@ -199,6 +208,7 @@ footer ul > li > a{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                padding-bottom: 20px;
 
                 input{
                     border: 1px solid var(--orange);
@@ -254,32 +264,3 @@ footer ul > li > a{
     display: none;
 }
 
-/* Loader */
-
-.loader-container{
-    position: absolute;
-    /* background: var(--orange); */
-    border: 16px solid var(--white);
-    border-radius: 50%;
-    border-top: 16px solid var(--shadow);
-    /* z-index: 999999; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    transition: opacity 1s ease-in-out;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    /* animation: fadeOutLoader; */
-}
-
-@-webkit-keyframes spin {
-    0% {-webkit-transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);}
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
